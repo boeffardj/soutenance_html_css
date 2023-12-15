@@ -1,0 +1,514 @@
+/*Variable */
+
+
+:root {
+    --lien: rgb(0,0,169);
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* =========BANDEAU =============*/
+#bandeau {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#bandeau ul li a {
+    color: var(--lien);
+}
+
+#bandeau #logo {
+
+    width: 35%;
+
+}
+
+#menuprincipal #burger {
+    display: block;
+}
+
+#bandeau ul {
+
+    display: flex;
+    display: none;
+    justify-content: flex-end;
+}
+.titre{
+    text-align: center;
+}
+.titre h1{
+color: red;
+padding: 20px 0;
+font-size: 2.5rem;
+
+}
+.titre p{
+    color: var(--lien);
+    font-size: 1.4rem;
+    margin:0 40px 50px 40px;
+}
+
+.haut-page .slider-wrapper {
+    display: none;
+    margin: 50px 0 0 0;
+    
+}
+
+
+.container {
+    max-width: 1400px;
+}
+
+
+
+
+
+/* ========bandeaux actu =========*/
+#contenu .haut-page {
+    width: 100%;
+}
+
+#contenu .haut-page .boite .actu a {
+    color: white;
+}
+
+#contenu .haut-page .boite .actu {
+    box-sizing: border-box;
+    background-color:var(--lien);
+    color: white;
+    padding: 30px 25px 0px 25px;
+    margin: 0px 30px 0 30px;
+    border-radius: 20px;
+    width: 40%;
+
+}
+#contenu .haut-page .boite .actu{
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+
+#contenu .haut-page .boite .actu ul li {
+    margin: 30px 30px 0 0;
+}
+
+#contenu .haut-page .boite .actu p {
+    margin: 5px 0;
+    color: white;
+
+}
+
+#contenu .haut-page .boite {
+    width: 100%;
+    display: flex;
+}
+
+#contenu .haut-page .boite .portable {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenu .haut-page .boite .portable a {
+    color: var(--lien);
+    text-align: center;
+
+}
+
+#contenu .haut-page .boite .portable #margin {
+    margin-bottom: 50px;
+}
+
+#contenu .haut-page .boite .portable img {
+    width: 100%;
+    margin: 50px 10px 20px 10px;
+}
+
+
+/* =======MAP======== */
+.container #map{
+    display: none;
+   
+}
+
+
+
+
+
+/* =====footer======== */
+#pied {
+    background-color: var(--lien);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+#pied .bas ul {
+    display: flex;
+    padding: 15px 10px 0 0;
+    font-size: 2rem;
+}
+#pied .bas ul li{
+    margin-left: 30px ;
+}
+
+#pied .bas a {
+    color: white;
+}
+
+#pied #adresse {
+    margin-left: 20px;
+}
+
+#pied #mention {
+    margin-right: 20px;
+}
+
+#copyright {
+    background-color: var(--lien);
+    color: white;
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+
+
+
+
+/*===== PAGE ACTUALITES=========  */
+
+.news {
+    margin-bottom: 50px;
+}
+
+.news img {
+    width: 100%;
+    height: 100%;
+}
+
+.news .loisir {
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+
+.news p {
+    color: var(--lien);
+    font-size: 1.5rem;
+   
+}
+
+.news h2 {
+    color: red;
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+/* ======Mentions légal======= */
+.mention p {
+    margin: 50px;
+    font-size: 2rem;
+    word-spacing: 5px;
+}
+
+
+
+
+
+/* =========CONTACT=========== */
+#formContact {
+    text-align: center;
+    color: var(--lien);
+
+}
+
+#formContact p {
+    font-size: 2rem;
+    border: solid 2px var(--lien);
+
+    margin: 16px 8px;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+#formContact p a {
+    color: black;
+}
+
+#formContact p a:hover {
+    color: var(--lien);
+}
+
+#formContact .bouton {
+    background-color: var(--lien);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#formContact .color {
+    color: var(--lien);
+    font-size: 1.3rem;
+}
+
+#formContact select {
+    background-color: var(--lien);
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+#formContact p:nth-of-type(1),
+#formContact p:nth-of-type(3),
+#formContact p:nth-of-type(6),
+#formContact p:nth-of-type(4),
+#formContact p:nth-of-type(2),
+#formContact p:nth-of-type(5) {
+    border: none;
+}
+
+#formContact p:nth-of-type(2) input,
+#formContact p:nth-of-type(4) select,
+#formContact p:nth-of-type(3) input,
+#formContact p:nth-of-type(4) input,
+#formContact p:nth-of-type(7) textarea,
+#formContact p:nth-of-type(5) input {
+    border: solid 2px var(--lien);
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 0;
+
+}
+
+#formContact p:nth-of-type(1) select,
+#formContact p:nth-of-type(3) select,
+#formContact p:nth-of-type(6) textarea {
+    border: solid 2px var(--lien);
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 0;
+
+}
+
+
+#formContact .bouton {
+    width: 200px;
+    font-size: 1.3rem;
+}
+
+
+
+/* ===============Work in progress====================================== */
+#inProgress{
+    width: 50%;
+    margin: 100px 25% 100px 25% ;
+}
+
+
+/* ============================COOKIES ==================== */
+#cookie{
+    display: none;
+    background-color: rgba(0, 85, 169, 0.778);
+    color: white;
+    position: absolute;
+    padding: 40px;
+    left: 5%;
+    width: 400px;
+    
+}
+.cookieGestion h4{
+   font-size: 1.2rem;
+   margin: 10px 0 ;
+}
+#cookie p{
+    margin:10px;
+}
+.cookieButton{
+    margin: 10px;
+    
+}
+
+
+
+
+
+
+
+
+/*======================== MIN WIDTH  768 px ======================================*/
+@media screen and (min-width:768px) {
+
+
+    /* Bandeau */
+    #bandeau:hover {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 169, 0.6);
+    }
+
+    #bandeau ul {
+        display: block;
+        display: flex;
+        
+    }
+
+    #bandeau ul li {
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+
+    #menuprincipal #burger {
+        display: none;
+    }
+    .titre p {
+        margin-right: 100px;
+    }
+
+
+    /* Slider et bandeau actu */
+    #contenu .container {
+        width: 60%;
+    }
+
+    #contenu .haut-page {
+        display: flex;
+    }
+
+    #contenu .haut-page .actu:hover {
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    #contenu .haut-page .actu a {
+        color: white;
+    }
+   
+
+    #contenu .haut-page .slider-wrapper #slider {
+        margin: 50px 0 0 150px;
+    }
+
+    #slider h2 {
+        font-size: 2rem;
+        color: var(--lien);
+    }
+
+    .nivo-caption {
+        background-color: white;
+        text-align: center;
+    }
+    .nivo-controlNav{
+        margin: 20px 0 0 350px;
+    }
+    #contenu .haut-page .boite .actu {
+        margin: 100px 0px 0px 200px;
+        border-radius: 20px;
+        text-align: center;
+ }
+  
+  
+
+
+     /* Page Actualité */
+
+    .news img:hover {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 169, 0.6);
+    }
+
+    .news #actu1,.news #actu2,.news #actu3, .news #actu4 {
+        display: flex;
+        justify-content: center;
+    }
+    .news .loisir {
+        text-align: center;
+        margin:  0;
+    }
+    .news h2{
+        margin-top: 40px;
+    }
+
+    .news p {
+        margin: 50px 150px 20px 20px;
+    }
+
+    .news img {
+        width: 100%;
+        padding: 50px 30px 80px 30px;
+    }
+
+
+
+
+
+    /* contact */
+    #formContact {
+        text-align: center;
+        color: var(--lien);
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #formContact .bouton:hover {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    #formContact p:nth-of-type(1) select, 
+    #formContact p:nth-of-type(6) textarea,
+    #formContact p:nth-of-type(3) select,
+    #formContact p:nth-of-type(5) input {
+    width: 500px;
+}
+}
+
+
+
+
+
+
+
+
+/* =============================GRAND ECRAN ============================================*/
+@media screen and (min-width:900px) {
+    #bandeau ul li {
+        margin-right: 50px;
+    }
+
+    #contenu .haut-page .slider-wrapper {
+        display: block;
+        width: 100%;
+    }
+
+    #contenu .haut-page .boite .portable {
+        display: none;
+    }
+
+    #contenu .haut-page .boite .actu {
+        margin: 100px 0px 0px 200px;
+        border-radius: 20px;
+        text-align: center;
+ }
+   /* ====MAPS========== */
+   .container #map{ 
+    display: block;
+    width: 60%;
+    height: 600px;
+    margin: 100px 0 150px 225px;
+   }
+}

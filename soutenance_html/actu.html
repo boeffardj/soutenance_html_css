@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités Aurore Vitré</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+                <!-- ==================================header============================= -->
+    <header id="bandeau" class="container">
+        <a href="index.html">
+            <img id="logo" src="images/aurore_logo.webp" alt="wwww.aurore.vitre.free.fr">
+        </a>
+        <nav id="menuprincipal">
+            <div id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="index.html" class="choix">Accueil</a></li>
+                <li><a href="actu.html">Actualités</a></li>
+                <li><a href="histoire.html">Un&nbsp;peu&nbsp;d'histoire</a></li>
+                <li><a href="contact.html">Nous&nbsp;contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="titre">
+            <h1> Nos Actualités</h1>
+        </div>
+
+        <!--============================================ Section Article================================== -->
+        <section class="news container">
+            <article id="actu1">
+                <img src="images/gymnastique.webp" alt="actu ">
+                <div class="loisir">
+                    <h2>Gymnastique</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolorum asperiores officia.
+                        Distinctio, facilis a maiores blanditiis corrupti dolore maxime!</p>
+                </div>
+            </article>
+            <article id="actu2">
+                <img src="images/ping_pong.webp" alt="actu">
+                <div class="loisir">
+                    <h2>Tennis de Table</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolorum asperiores officia.
+                        Distinctio, facilis a maiores blanditiis corrupti dolore maxime!</p>
+                </div>
+
+            </article>
+            <article id="actu3">
+                <img src="images/athle.webp" alt="actu ">
+                <div class="loisir">
+                    <h2>Athlétisme</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolorum asperiores officia.
+                        Distinctio, facilis a maiores blanditiis corrupti dolore maxime!</p>
+
+                </div>
+            </article>
+            <article id="actu4">
+                <img src="images/tir_sportif.webp" alt="actu ">
+                <div class="loisir">
+                    <h2>Tir sportif</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolorum asperiores officia.
+                        Distinctio, facilis a maiores blanditiis corrupti dolore maxime!</p>
+
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <!--====================================================== footer============================================ -->
+    <footer id="pied" class="container">
+        <div id="adresse" class="bas">
+            <p>
+                Adresse <br>
+                3 bis rue de la Poultière<br>
+                35500 Vitré
+            </p>
+        </div>
+        <div class="bas">
+            <ul>
+                <li><a href="#"> <i class="fa-brands fa-square-facebook"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div id="mention" class="bas">
+            <a href="mentions.html">Mentions Légale </a>
+            <a href="#" class="cookieGestion">
+                <h4>Gestion des cookies</h4></a>
+                <div id="cookie">
+                    <img src="images/cookie.png" alt="cookie" height="30px">
+                    <p>
+                        <span>http://aurore.vitre.free.fr/Aurore/</span>prends des cookies pour ameliorer l'experience de navigation,
+                        mesurer l'audience du site internet, réaliser des campagnes ciblées et personnaliser l'interface du site 
+                    </p>
+                    <a href="#" class="cookieButton">Refuser</a>
+                    <a href="#" class="cookieButton">Parametrer</a>
+                    <a class="cookieBouton" id="acceptButton">Accepter</a>
+
+                </div>
+        </div>
+
+    </footer>
+
+                 <!--======================================== copyright ==================================-->
+    <div id="copyright" class="container">
+        <p>Copyright &copy; 2023 - Greta Bretagne Sud </p>
+    </div>
+
+    <!-- ========================JAVASCRIPT ==================================== -->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript">
+        /* ==============Script COOKIES================*/
+        $(".cookieGestion").click(function(){
+            $("#cookie").show(1000);
+         });
+         $("#acceptButton").click(function(){
+            $("#cookie").hide(1000);
+         });
+        $("#menuprincipal #burger i").click(function () {
+            $("#menuprincipal ul").slideToggle(1500);
+        })
+    </script>
+</body>
+
+</html>

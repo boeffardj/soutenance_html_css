@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>Actualités Aurore Vitré</title>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin=anonymous referrerpolicy=no-referrer />
+<link rel=stylesheet href=style.css>
+</head>
+<body>
+<header id=bandeau class=container>
+<a href=index.html>
+<img id=logo src=images/aurore_logo.webp alt=wwww.aurore.vitre.free.fr>
+</a>
+<nav id=menuprincipal>
+<div id=burger>
+<i class="fa-solid fa-bars"></i>
+</div>
+<ul>
+<li><a href=index.html class=choix>Accueil</a></li>
+<li><a href=actu.html>Actualités</a></li>
+<li><a href=histoire.html>Un&nbsp;peu&nbsp;d'histoire</a></li>
+<li><a href=contact.html>Nous&nbsp;contacter</a></li>
+</ul>
+</nav>
+</header>
+<main class=container>
+<div class=titre>
+<h1>Nous contacter</h1>
+</div>
+<form action=envoyerform.php method=post id=formContact>
+<p><select name=civilité class=taille>
+<option>Vous êtes un(e) *</option>
+<option value=homme class=taille>Homme</option>
+<option value=femme class=taille>Femme</option>
+<option value=autre class=taille>Autre</option>
+</select>
+</p>
+<p>
+<input type=text name=nom placeholder="Nom *" class=color>
+<input type=text name=prenom placeholder="Prénom *" class=color>
+</p>
+<p>
+<select name=souhait class=taille>
+<option>Vous souhaitez *</option>
+<option value=telephone class=taille>Etre rappelé par téléphone</option>
+<option value=email class=taille>Etre recontacté par mail</option>
+</select>
+</p>
+<p>
+<input type=email name=email placeholder=Email class=color>
+<input type=tel name=telephone placeholder="Numéro de téléphone" class=color>
+</p>
+<p>
+<input type=text name=sujet placeholder="Sujet *" class=color>
+</p>
+<p>
+<textarea name=message rows=8 class=color>Comment pouvons-nous vous aider ? *</textarea>
+</p>
+<p>
+<input type=checkbox name=rgpd id=rgpd value=rgpd required=required><label for=rgpd>
+J'autorise ce site à utiliser mes données personnelles selon
+notre <a href=#>politique de Confidentialité</a></label>
+</p>
+<p>
+<input type=reset value=Annuler class=bouton>
+<input type=submit value=Envoyer class=bouton>
+</p>
+</form>
+<iframe src="https://www.google.com/maps/d/embed?mid=1arj4bkuh9gYRF55vxwUJA1mHBzo&ehbc=2E312F" id=map></iframe>
+</main>
+<footer id=pied class=container>
+<div id=adresse class=bas>
+<p>
+Adresse <br>
+3 bis rue de la Poultière<br>
+35500 Vitré
+</p>
+</div>
+<div class=bas>
+<ul>
+<li><a href=#> <i class="fa-brands fa-square-facebook"></i></a></li>
+<li> <a href=#><i class="fa-brands fa-square-x-twitter"></i></a></li>
+<li><a href=#><i class="fa-brands fa-square-instagram"></i></a></li>
+</ul>
+</div>
+<div id=mention class=bas>
+<a href=mentions.html>Mentions Légale </a>
+<a href=# class=cookieGestion>
+<h4>Gestion des cookies</h4></a>
+<div id=cookie>
+<img src=images/cookie.png alt=cookie height=30px>
+<p>
+<span>http://aurore.vitre.free.fr/Aurore/</span>prends des cookies pour ameliorer l'experience de navigation,
+mesurer l'audience du site internet, réaliser des campagnes ciblées et personnaliser l'interface du site
+</p>
+<a href=# class=cookieButton>Refuser</a>
+<a href=# class=cookieButton>Parametrer</a>
+<a class=cookieBouton id=acceptButton>Accepter</a>
+</div>
+</div>
+</footer>
+<div id=copyright class=container>
+<p>Copyright &copy; 2023 - Greta Bretagne Sud </p>
+</div>
+<script type=text/javascript src=scripts/jquery-1.9.0.min.js></script>
+<script type=text/javascript>$(".cookieGestion").click(function(){$("#cookie").show(1000)});$("#acceptButton").click(function(){$("#cookie").hide(1000)});$("#menuprincipal #burger i").click(function(){$("#menuprincipal ul").slideToggle(1500)});</script>
+</body>
+</html>
